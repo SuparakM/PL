@@ -1,0 +1,58 @@
+class Animal:
+    def __init__(self):
+        print("create animal")
+        
+    def __del__(self):
+        print("delete animal")
+        
+    def sound(self):
+        print("animal makes a sound")
+
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        print("dog")
+        
+    def __del__(self):
+        print("delete dog")
+        super().__del__()
+        
+    def sound(self):
+        print("dog barks")
+
+class Cat(Animal):
+    def __init__(self):
+        super().__init__()
+        print("cat")
+        
+    def __del__(self):
+        print("delete cat")
+        super().__del__()
+        
+    def sound(self):
+        print("cat meows")
+
+# การทดสอบ
+if __name__ == "__main__":
+    a = Animal()
+    d = Dog()
+    c = Cat()
+    
+    a.sound() # animal makes a sound
+    d.sound() # dog barks
+    c.sound() # cat meows
+
+
+create animal
+create animal
+dog
+create animal
+cat
+animal makes a sound
+dog barks
+cat meows
+delete animal
+delete dog
+delete animal
+delete cat
+delete animal
