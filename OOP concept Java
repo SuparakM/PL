@@ -62,3 +62,15 @@ public class Main {
         c.sound();
     }
 }
+
+
+create animal
+create animal: MooDeng
+create animal
+dog
+create animal
+cat
+animal makes a sound
+cat meows
+dog barks
+cat meows
